@@ -19,6 +19,10 @@ test("same time: fine for picnics, too late for the office", () => {
     assert.strictEqual(checkBooking("office", "2026-11-21", "14:00", 3, TODAY).ok, false);
 });
 
+test("before opening is refused", () => {
+    assert.strictEqual(checkBooking("office", "2026-11-21", "08:30", 1, TODAY).reason, "Office open at 09:00.");
+});
+
 test("yesterday is refused, today is allowed", () => {
     assert.strictEqual(checkBooking("picnic", "2026-11-12", "10:00", 2, TODAY).ok, false);
     assert.strictEqual(checkBooking("picnic", "2026-11-13", "10:00", 2, TODAY).ok, true);
