@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="color-scheme" content="only light">
+    <title>Matlapeng - Picnics, Accommodation, Venue, Spa (sample)</title>
+    <meta name="description" content="Sample website for Matlapeng, R54 Plot 13 Cyferpan, Vanderbijlpark.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="sample-banner">Sample prepared by Separaka Holdings for Matlapeng. Not yet approved.</p>
+
+    <header class="site-header">
+        <a class="brand" href="#top">Matlapeng</a>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#hours">Hours</a>
+            <a href="#enquire">Enquire</a>
+            <a href="#find-us">Find us</a>
+        </nav>
+    </header>
+    <div class="eave"></div>
+
+    <main id="top">
+        <section class="hero">
+            <p class="kicker">The place of stones</p>
+            <h1>A rustic country setting for picnics, country weddings and events.</h1>
+            <p>R54, Plot 13, Cyferpan, Vanderbijlpark.</p>
+            <a class="btn" href="#enquire">Send an enquiry</a>
+        </section>
+
+        <div class="litema"></div>
+
+        <section id="services">
+            <h2>What we offer</h2>
+            <ul class="services">
+                <li><h3>Picnics</h3><p>09:00 to 18:00.</p></li>
+                <li><h3>Venue</h3><p>Country weddings and events.</p></li>
+                <li><h3>Accommodation</h3><p>Ask us about dates.</p></li>
+                <li><h3>Spa</h3><p>Ask us about times.</p></li>
+            </ul>
+        </section>
+
+        <div class="litema"></div>
+
+        <section id="hours">
+            <h2>Hours</h2>
+            <table class="hours">
+                <tr><th>Office</th><td>09:00 to 16:00</td></tr>
+                <tr><th>Picnics</th><td>09:00 to 18:00</td></tr>
+                <tr><th>Viewings</th><td>By appointment only</td></tr>
+            </table>
+        </section>
+
+        <div class="litema"></div>
+
+        <section id="enquire">
+            <h2>Send an equiry</h2>
+            <p>We check the hours for you, then WhatsApp opens with your message ready.You only press Send.</p>
+            <form id="enquiry-form" novalidate>
+                <label for="service">Service</label>
+                <select id="service">
+                    <option value="">Choose a service</option>
+                    <option value="picnic">Picnic</option>
+                    <option value="viewing">Viewing (office hours)</option>
+                    <option value="venue">Venue</option>
+                    <option value="accommodation">Accomodation</option>
+                    <option value="spa">Spa</option>
+                </select>
+
+                <label for="name">Your name</label>
+                <input id="name" type="text" autocomplete="name">
+
+                <label for="date">Date</label>
+                <input id="date" type="date">
+
+                <label for="start">Start time</label>
+                <input id="start" type="time" value="10:00">
+
+                <label for="hours-wanted">Hours</label>
+                <input id="hours-wanted" type="number" min="1" step="1" value="2">
+
+                <label for="people">People</label>
+                <input id="people" type="number" min="1" step="1" value="2">
+
+                <button class="btn" type="submit">Check and continue</button>
+            </form>
+            <div id="enquiry-result" aria-live="polite"></div>
+        </section>
+
+        <div class="litema"></div>
+
+        <section id="find-us">
+            <h2>Find us</h2>
+            <p>R54, Plot 13, Cyferpan, Vanderbijlpark, 1911.</p>
+            <p>Please do not hoot. Call for service:</p>
+            <p><a href="tel:+27849527979">084 952 7979</a> or <a href="tel:+27732238979">073 223 8979</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Matlapeng &middot; Website by Separaka Holdings</p>
+    </footer>
+
+    <script src="hours.js"></script>
+    <script src="enquiry-ui.js"></script>
+</body>
+</html>
